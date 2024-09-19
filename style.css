@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* Reuse Css Start*/
+.flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 3rem auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+.btn-primary {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  outline: none;
+  background: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.active {
+  background: #b00000;
+  color: white;
+  border: 1px solid #b00000;
+}
+
+.active:hover {
+  box-shadow: 0px 0px 64px 0px #b000004d;
+}
+
+.gray {
+  color: #808080;
+}
+
+.sub-text {
+  font-size: 0.8rem;
+  line-height: 18px;
+  word-spacing: 3px;
+}
+
+.btn-secoundry {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  background: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.bg-text {
+  font-size: 3rem;
+  width: 40rem;
+  margin: 1rem auto;
+  font-weight: 600;
+  color: #18191f;
+}
+
+
+/* Reuse Css End*/
+
+/* navbar code started  */
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-main div {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list li {
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list:last-child {
+  margin-right: 5rem;
+}
+/* navbar code End */
+
+/* Hero code Started */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.left-box {
+  width: 50%;
+}
+.right-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.sub-heading {
+  font-size: 0.9rem;
+  color: #d6d4d4e0;
+  font-weight: 600;
+  width: 40%;
+  border-bottom: 1px solid #d6d4d4e0;
+  margin-bottom: 1rem;
+}
+
+.sub-heading li {
+  padding-right: 0.5rem;
+}
+.sub-heading li:first-child {
+  color: #b00000;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #b00000;
+}
+
+.sub-title {
+  width: 26rem;
+  margin-block: 0.8rem;
+  margin-bottom: 4rem;
+}
+/* Hero code End */
+
+/* why section started */
+.secoundry-title {
+  font-size: 3rem;
+  margin-block: 1rem;
+}
+
+.company-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.company-logo div {
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+}
+
+.card-section {
+  margin-block: 8rem;
+}
+
+.card-section div {
+  margin-inline: 0.9rem;
+}
+
+/* why section end */
+
+/* Pricing section started */
+
+.pricing-sub-title {
+  font-size: 1.5rem;
+}
+
+.discount-span {
+  background-color: #ffe87a;
+  font-size: 0.7rem !important;
+  padding: 0.2rem;
+  border-radius: 0.7rem;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 4rem;
+}
+
+.toggle span {
+  font-size: 1.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b00000;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing-mode-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pricing-mode-title p {
+  border-bottom: 4px solid #808080;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-mode-title p:first-child {
+  border-bottom: 4px solid #b00000;
+}
+
+.pricing-card {
+  width: 19rem;
+  border: 3px solid #c4c4c4;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 6rem;
+  margin-left: 2rem;
+}
+
+.pricing-card ul {
+  list-style-image: url("assets/images/check.svg");
+  font-size: 1rem;
+  padding: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #808080;
+}
+
+.pricing-card ul li {
+  padding-left: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.card-disc {
+  font-size: 0.8rem;
+}
+
+.price-span {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+.price-span p {
+  font-size: 0.2rem;
+}
+
+/* Pricing section end */
+
+/* Testimonial Section start */
+
+.testimonial-section{
+  display: flex;
+  gap: 1.5rem;
+  margin-block: 8rem;
+}
+
+.testimonial-title {
+  font-weight: 800;
+  /* background-color: #b00000; */
+  width: 27rem;
+  margin-right: 0;
+  position: relative;
+}
+
+.testimonial-title img{
+  position: absolute;
+  left: -6rem;
+  top: -3rem;
+  z-index: -55;
+}
+
+.testi-sub-text {
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.testi-sub-text img{
+  position: absolute;
+  left: -1.2rem;
+}
+
+.testimonial-container {
+  max-width: 21rem;
+  max-height: 29rem;
+  text-align: left;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 20px 0px #29292A12;
+  /* box-shadow: #18191f;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+.testimonial-container img:nth-child(2){
+  position: absolute;
+  left: 1.5rem;
+  top: 8rem;
+}
+
+.testimonial-container-bottom{
+  margin-top: 2rem;
+}
+
+.testimonial-container-bottom span:first-child{
+  font-weight: 700; 
+  font-size: 1.1rem;
+}
+.testimonial-container-bottom span:nth-child(3){
+  font-size: 0.8rem;
+  color: #969BAB;
+}
+
+.left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Testimonial Section End */
+
+/* Testimonial Section start */
+
+/* .serve-section{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+/* Testimonial Section end */
+
+
