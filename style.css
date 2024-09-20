@@ -243,11 +243,15 @@ li {
   content: "";
   height: 22px;
   width: 22px;
-  left: 4px;
+  left: 32px;
   bottom: 5px;
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
+}
+
+#checkbox:checked ~ .slider::before{
+  left: 5px;
 }
 
 .pricing-plans {
@@ -397,14 +401,77 @@ li {
 
 /* Testimonial Section End */
 
-/* Testimonial Section start */
+/* CTA Section start */
 
-/* .serve-section{
+.plan-bg{
+  background-color: #F7FAFE;
+  padding: 5rem;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.plan-bg #Element-png{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.CTA-btn{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-} */
+  align-items: center;
+  gap: 4px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  height: 3rem;
+  width: 13rem;
+}
 
-/* Testimonial Section end */
+
+/* CTA Section end */
+
+/* Footer section Started */
+.Footer-section{
+  width: 100%;
+  height: 33.5rem;
+  background-color: #b00000;
+  color: white;
+}
+
+.footer-main{
+  display: flex;
+  justify-content: space-around;
+  gap: 6rem;
+  padding-inline: 6.5rem;
+  padding-block:  6.5rem 0;
+  font-weight: 300;
+}
+
+.footer-main p{
+  margin-top: 0.5rem;
+  line-height: 2rem;
+}
+
+.footer-list{
+  line-height: 3rem;
+  width: 42rem;
+}
+.footer-list li:first-child{
+  font-weight: 700;
+}
+
+.footer-bottom{
+  padding: 0 6.5rem;
+  padding-top: 3rem;
+  gap: 4px;
+}
+.footer-bottom img{
+   filter: invert(100%);
+}
+/* Footer section End */
 
 
