@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="shortcut icon"
       href="assets/images/Rectangle 3.svg"
@@ -15,7 +16,11 @@
     <nav class="navbar-main container">
       <div class="nav-logo flex">
         <img src="assets/images/Rectangle 3.svg" alt="Logo" />
+        <div>
+          <img src="assets/Icon-img/menu.svg" id="menu-btn" alt="menu-btn-png">
+        </div>
       </div>
+      
       <div class="nav-list">
         <li>Our Service</li>
       </div>
@@ -31,7 +36,6 @@
         </li>
       </div>
     </nav>
-
     <section class="hero-section w-full container">
       <div class="left-box">
         <div class="sub-heading flex">
@@ -50,10 +54,11 @@
           <button class="btn-primary">Choose Your Plan</button>
         </div>
       </div>
-      <div class="right-box">
+      <div class="right-box hero-section-img">
         <img src="assets/images/Group 6.svg" alt="hero-section-img" />
       </div>
     </section>
+
 
     <section class="why-section flex w-full container">
       <div class="left-box">
@@ -92,10 +97,13 @@
       </div>
     </section>
 
+
     <section class="card-section container flex">
       <div class="text-center">
         <img src="assets/Icon-img/icn1 1.svg" alt="time-logo" />
-        <h3>99.9% Uptime</h3>
+        <div>
+          <h3>99.9% Uptime</h3>
+        </div>
         <p class="sub-text">
           We Keep Your Web build Online 24x7x365. Downtime not only costs you
           lost visitors but also damages your reputation and search engine
@@ -131,6 +139,7 @@
       </div>
     </section>
 
+
     <section class="pricing-section container">
       <div class="text-center">
         <div class="bg-text">Ready to get started with Lemon Wares?</div>
@@ -160,9 +169,14 @@
             with all your customers via all conversation channels in one central
             dashboard.
           </p>
-
-          <p class="price-span">$2.80</p>
-          <p style="font-size: 0.8rem">Per month</p>
+          <div class="pricing-box-month">
+            <p class="price-span">$2.80</p>
+            <p style="font-size: 0.8rem">Per month</p>
+          </div>
+          <div class="pricing-box-year hide">
+            <p class="price-span">$26.88</p>
+            <p style="font-size: 0.8rem">Per year</p>
+          </div>
           <br />
           <button class="btn-secoundry">Choose this plan</button>
           <ul>
@@ -183,8 +197,14 @@
             with all your customers via all conversation channels in one central
             dashboard.
           </p>
-          <p class="price-span">$4.20</p>
-          <p style="font-size: 0.8rem">Per month</p>
+          <div class="pricing-box-month">
+            <p class="price-span">$4.20</p>
+            <p style="font-size: 0.8rem">Per month</p>
+          </div>
+          <div class="pricing-box-year hide">
+            <p class="price-span">$40.32</p>
+            <p style="font-size: 0.8rem">Per year</p>
+          </div>
           <br />
           <button class="btn-secoundry">Choose this plan</button>
           <ul>
@@ -205,8 +225,14 @@
             with all your customers via all conversation channels in one central
             dashboard.
           </p>
-          <p class="price-span">$7.00</p>
-          <p style="font-size: 0.8rem">Per month</p>
+          <div class="pricing-box-month">
+            <p class="price-span">$7.00</p>
+            <p style="font-size: 0.8rem">Per month</p>
+          </div>
+          <div class="pricing-box-year hide">
+            <p class="price-span">$67.2</p>
+            <p style="font-size: 0.8rem">Per year</p>
+          </div>
           <br />
           <button class="btn-secoundry">Choose this plan</button>
           <ul>
@@ -223,6 +249,7 @@
         </div>
       </div>
     </section>
+
 
     <section class="testimonial-section w-full container">
       <div class="left-box h-full left-container">
@@ -286,6 +313,7 @@
       </div>
     </section>
 
+
     <section class="serve-section flex w-full container">
       <div class="left-box">
         <div class="title secoundry-title">
@@ -338,6 +366,7 @@
       </div>
     </section>
 
+
     <section class="CTA-section container">
       <div class="plan-bg flex text-center">
         <img
@@ -351,7 +380,8 @@
           touch with us
         </button>
       </div>
-    </section>
+    </section> 
+    
 
     <section class="Footer-section">
       <div class="footer-main">
@@ -395,8 +425,15 @@
       </div>
 
       <div class="footer-bottom flex">
-        Built by Jeremiah with<img width="20" src="assets/Icon-img/heart (1).svg" alt="heart-icon">in Lagos. Copyright 2021
+        Built by Jeremiah with<img
+          width="20"
+          src="assets/Icon-img/heart (1).svg"
+          alt="heart-icon"
+        />in Lagos. Copyright 2021
       </div>
     </section>
+
+
   </body>
+  <script src="script.js"></script>
 </html>

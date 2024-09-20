@@ -90,6 +90,14 @@ li {
   color: #18191f;
 }
 
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
 
 /* Reuse Css End*/
 
@@ -114,6 +122,10 @@ li {
 
 .nav-list:last-child {
   margin-right: 5rem;
+}
+
+#menu-btn{
+  display: none;
 }
 /* navbar code End */
 
@@ -243,7 +255,7 @@ li {
   content: "";
   height: 22px;
   width: 22px;
-  left: 32px;
+  left: 5px;
   bottom: 5px;
   background-color: white;
   transition: 0.4s;
@@ -251,7 +263,7 @@ li {
 }
 
 #checkbox:checked ~ .slider::before{
-  left: 5px;
+  left: 32px;
 }
 
 .pricing-plans {

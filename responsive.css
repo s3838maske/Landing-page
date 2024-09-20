@@ -1,3 +1,207 @@
-@media screen {
-    
+/* Tablet devices (max-width: 991px) */
+@media (max-width: 991px) {
+  .navbar-main {
+    padding: 0 2rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .left-box {
+    width: 90%;
+  }
+  .right-box {
+    width: 90%;
+  }
+
+  .why-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-logo {
+    justify-content: space-evenly;
+    gap: 7rem;
+  }
+
+  .card-section {
+    flex-wrap: wrap;
+  }
+
+  .card-section div {
+    margin-inline: 0;
+    width: 20rem;
+    margin: 1rem auto;
+  }
+
+  .pricing-plans {
+    margin: 2rem;
+  }
+
+  .testimonial-section {
+    flex-direction: column;
+  }
+
+  .testimonial-title {
+    margin: 0 auto;
+  }
+  .left-container {
+    align-items: center;
+  }
+  .right-container {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .serve-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Footer-section {
+    height: 100%;
+  }
+
+  .footer-main {
+    flex-wrap: wrap;
+  }
+  .footer-list {
+    width: 7rem;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Mobile devices (max-width: 478px) */
+@media (max-width: 478px) {
+  #menu-btn {
+    display: block;
+  }
+
+  .nav-logo {
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    margin-left: -30rem;
+    background-color: white;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .nav-list li {
+    padding: 10px;
+  }
+
+  .navbar-main {
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    position: relative;
+  }
+
+  .navbar-main div {
+    gap: 0;
+  }
+
+  .hero-section {
+    margin-top: -18rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .sub-heading {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .sub-title {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .btn-primary {
+    padding: 0.5rem;
+  }
+  .hero-section-img img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .company-logo div {
+    width: auto;
+  }
+  .plan-bg {
+    width: 100%;
+  }
+
+  .bg-text {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .pricing-sub-title {
+    font-size: 1rem;
+  }
+  .pricing-mode-title p {
+    font-size: 1rem;
+  }
+  .pricing-plans {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .pricing-card {
+    margin: 2rem 0;
+  }
+  .pricing-mode-title {
+    width: 90%;
+  }
+  .discount-span {
+    font-size: 0.5rem;
+  }
+
+  .toggle {
+    gap: 1rem;
+  }
+  .toggle span {
+    font-size: 1rem;
+  }
+  .testimonial-title img {
+    left: -1rem;
+    top: -1rem;
+    width: 3rem;
+  }
+
+  .Footer-section {
+    padding: 2rem 1rem;
+  }
+  .footer-main {
+    padding: 0;
+    gap: 0;
+    row-gap: 1rem;
+  }
+
+  .footer-list {
+    width: 12rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
 }
